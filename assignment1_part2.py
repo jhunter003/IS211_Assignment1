@@ -12,14 +12,13 @@ class Book:
     def display(self):
         """Display the author's name and book title"""
 
-        print(f"I'm an author. My name is {self.author}.")
-        print(f"I wrote the book called {self.title}.")
+        print(f"{self.title}, written by {self.author}.")
         pass
 
 
 if __name__ == "__main__":
-    a1 = Book("first name1", "Book Title1")
-    a2 = Book("first name2", "Book Title2")
+    a1 = Book("J.K. Rowling", "Harry Potter and the Goblet of Fire")
+    a2 = Book("Walter Scott", "Ivanhoe: A Romance")
 
     a1.display()
     a2.display()
